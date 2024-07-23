@@ -1,1 +1,3 @@
-# Cron job
+# Prometheus dir size monitoring 
+*/5 * * * * root /opt/scripts/prometheus/tc_scripts/directory-size.sh /opt/dashy /opt/prometheus | sponge /opt/prometheus/text_collector/directory_size.prom
+
